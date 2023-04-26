@@ -3,7 +3,7 @@ const BLOG = {
   author: '菜皮',
   email: 'monsterlabfkdtz@gmail.com',
   link: 'https://www.lipijin.com',
-  description: '菜皮记录文章和随想的地方',
+  description: '笔记和随想在这停留',
   lang: 'zh-CN', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   timezone: 'Asia/Shanghai', // Your Notion posts' date will be interpreted as this timezone. See https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for all options.
   appearance: 'auto', // ['light', 'dark', 'auto'],
