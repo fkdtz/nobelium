@@ -21,7 +21,6 @@ import { ConfigProvider } from '@/lib/config'
 import { LocaleProvider } from '@/lib/locale'
 import { prepareDayjs } from '@/lib/dayjs'
 import { ThemeProvider } from '@/lib/theme'
-import { Analytics } from '@vercel/analytics/react'
 import Scripts from '@/components/Scripts'
 
 const Ackee = dynamic(() => import('@/components/Ackee'), { ssr: false })
@@ -42,7 +41,6 @@ export default function MyApp ({ Component, pageProps, config, locale }) {
             )}
             {process.env.VERCEL_ENV === 'production' && config?.analytics?.provider === 'ga' && <Gtag />}
             <Component {...pageProps} />
-            <Analytics />
           </>
         </ThemeProvider>
       </LocaleProvider>
