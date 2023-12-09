@@ -15,6 +15,9 @@ dependencies:
   '@vercel/analytics':
     specifier: ^1.0.0
     version: registry.npmmirror.com/@vercel/analytics@1.0.0(react@18.2.0)
+  '@vercel/speed-insights':
+    specifier: ^1.0.1
+    version: registry.npmmirror.com/@vercel/speed-insights@1.0.1
   axios:
     specifier: ^1.3.4
     version: registry.npmmirror.com/axios@1.3.4
@@ -720,6 +723,13 @@ packages:
       react: ^16.8||^17||^18
     dependencies:
       react: registry.npmmirror.com/react@18.2.0
+    dev: false
+
+  registry.npmmirror.com/@vercel/speed-insights@1.0.1:
+    resolution: {integrity: sha512-cm8KTTsDgS1AbWsgIEZuMoyPUjclzeqJihyLp0tnA21B/x9iTE8hu2S5zM+/DBzihuHxWL1dx9pCWk22ctMFWQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vercel/speed-insights/-/speed-insights-1.0.1.tgz}
+    name: '@vercel/speed-insights'
+    version: 1.0.1
+    requiresBuild: true
     dev: false
 
   registry.npmmirror.com/@webassemblyjs/ast@1.11.6:

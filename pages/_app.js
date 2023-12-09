@@ -24,12 +24,13 @@ import { ThemeProvider } from '@/lib/theme'
 import Scripts from '@/components/Scripts'
 
 import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 
 const Ackee = dynamic(() => import('@/components/Ackee'), { ssr: false })
 const Gtag = dynamic(() => import('@/components/Gtag'), { ssr: false })
 
-export default function MyApp ({ Component, pageProps, config, locale }) {
+export default function MyApp({ Component, pageProps, config, locale }) {
   return (
     <ConfigProvider value={config}>
       <Scripts />
@@ -45,6 +46,7 @@ export default function MyApp ({ Component, pageProps, config, locale }) {
             {process.env.VERCEL_ENV === 'production' && config?.analytics?.provider === 'ga' && <Gtag />}
             <Component {...pageProps} />
             <Analytics />
+            <SpeedInsights />
           </>
         </ThemeProvider>
       </LocaleProvider>
